@@ -16,7 +16,7 @@ function Home() {
   const { cart } = JSON.parse(localStorage.getItem('usuario'));
 
   const addToCart = async (cid, pid) => {
-    await axios.post('https://finalback-react.up.railway.app/api/cartsBd/${cid}/product/${pid}');
+    await axios.post(`https://finalback-react.up.railway.app/api/cartsBd/${cid}/product/${pid}`);
   };
 
   useEffect(() => {
